@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PieceColor.hpp                                     :+:      :+:    :+:   */
+/*   ChessNotation.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/02 03:34:33 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/02 04:22:09 by bbellavi         ###   ########.fr       */
+/*   Created: 2020/11/02 04:11:05 by bbellavi          #+#    #+#             */
+/*   Updated: 2020/11/02 04:12:25 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _PIECE_COLOR_HPP
-# define _PIECE_COLOR_HPP
+#ifndef _CHESS_NOTATION_HPP
+# define _CHESS_NOTATION_HPP
 
-enum PieceColor {
-    NONE,
-    WHITE,
-    BLACK,
+enum ChessNotation {
+    KING = 'Q',
+    QUEEN = 'K',
+    ROOK = 'R',
+    BISHOP = 'B',
+    KNIGHT = 'N',
+    PAWN = 'P'
 };
 
 #endif

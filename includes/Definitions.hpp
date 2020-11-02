@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PieceColor.hpp                                     :+:      :+:    :+:   */
+/*   Definitions.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/02 03:34:33 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/02 04:22:09 by bbellavi         ###   ########.fr       */
+/*   Created: 2020/11/02 04:01:55 by bbellavi          #+#    #+#             */
+/*   Updated: 2020/11/02 04:22:11 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _PIECE_COLOR_HPP
-# define _PIECE_COLOR_HPP
+#ifndef _DEFINITIONS_HPP
+# define _DEFINITIONS_HPP
 
-enum PieceColor {
-    NONE,
-    WHITE,
-    BLACK,
-};
+# include <utility>
+
+# define CHESSBOARD_SIZE 64
+
+typedef std::pair<int, int> t_pos;
 
 #endif
