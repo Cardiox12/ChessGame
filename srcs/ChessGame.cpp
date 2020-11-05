@@ -6,7 +6,14 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 03:49:39 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/02 03:56:31 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:52:21 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ChessGame.hpp"
+
+void
+ChessGame::start() const
+{
+    _chessboard.show();
+}

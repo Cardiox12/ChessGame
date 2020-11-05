@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 03:56:41 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 05:10:35 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:53:33 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,13 @@
 class Chessboard {
     
 public:
+    Chessboard();
+    
     void
-    show();
+    show() const;
 
     void
     reset();
-
-    // void
-    // move(ChessPie);
 
 private:
     std::array<Square, CHESSBOARD_SIZE> _chessboard;

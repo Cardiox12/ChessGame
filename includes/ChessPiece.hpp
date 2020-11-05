@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 04:00:26 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:14:53 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 07:02:10 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ public:
 
     void
     move(Square *new_pos) const;
+
+    ChessNotation
+    getNotation() const;
 
 private:
     Chessboard              *_chessboard;

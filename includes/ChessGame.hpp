@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 02:47:13 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:15:21 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:51:17 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ public:
     ChessGame() : 
         _round{ PieceColor::WHITE },
         _winner{ PieceColor::NONE } {};
-
-    // ~ChessGame();
 
     void
     start() const;

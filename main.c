@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 03:22:05 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:03:06 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:46:56 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@ main(void)
 {
     ChessGame game;
     
+    game.start();
     return (0);
 }

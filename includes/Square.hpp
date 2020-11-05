@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 03:58:51 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:23:32 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 07:04:52 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 # define _SQUARE_HPP
 
 # include "Types.hpp"
+# include "PieceColor.hpp"
 # include "ChessPiece.hpp"
+
+class ChessPiece;
 
 class Square {
 public:
