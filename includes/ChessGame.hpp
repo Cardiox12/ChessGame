@@ -6,18 +6,17 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 02:47:13 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/02 03:48:25 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:15:21 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef _CHESSGAME_HPP
 # define _CHESSGAME_HPP
 
-#include <iostream>
-#include <string>
-#include "PieceColor.hpp"
-
-typedef std::pair<int, int> t_pos;
+# include <iostream>
+# include <string>
+# include "ChessBoard.hpp"
+# include "PieceColor.hpp"
 
 class ChessGame {
 
@@ -27,7 +26,7 @@ public:
         _round{ PieceColor::WHITE },
         _winner{ PieceColor::NONE } {};
 
-    ~ChessGame();
+    // ~ChessGame();
 
     void
     start() const;
@@ -38,7 +37,7 @@ private:
     PieceColor _winner;
 
     void
-    play(t_pos position) const;
+    play(Vec position) const;
 
     int
     import_game(std::string filename);

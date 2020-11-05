@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 04:00:26 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/02 04:21:59 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/05 06:14:53 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,21 @@
 
 # include <vector>
 # include <string>
+# include "Square.hpp"
+# include "ChessBoard.hpp"
 # include "PieceColor.hpp"
 # include "Definitions.hpp"
-# include "Square.hpp"
 # include "ChessNotation.hpp"
+
+class Square;
+class Chessboard;
 
 class ChessPiece {
 
 public:
 
-    ChessPiece::ChessPiece();
-    ~ChessPiece::ChessPiece();
+    ChessPiece();
+    ~ChessPiece();
 
     void
     updateAuthorizedMoves() const;
@@ -34,12 +38,13 @@ public:
     move(Square *new_pos) const;
 
 private:
-    std::vector<int>    _authorizedMove;
-    Square              *_position;
-    PieceColor          _color;
-    std::string         _name;
-    ChessNotation       _notation;
-    int                 _value;
+    Chessboard              *_chessboard;
+    Square                  *_position;
+    std::vector<Square*>    _authorizedMoves;
+    PieceColor              _color;
+    std::string             _name;
+    ChessNotation           _notation;
+    int                     _value;
 };
 
 #endif

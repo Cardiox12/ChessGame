@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   Types.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/02 03:22:05 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:03:06 by bbellavi         ###   ########.fr       */
+/*   Created: 2020/11/05 05:39:50 by bbellavi          #+#    #+#             */
+/*   Updated: 2020/11/05 05:54:40 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ChessGame.hpp"
+#ifndef _TYPES_HPP
+# define _TYPES_HPP
 
-int
-main(void)
-{
-    ChessGame game;
+class Vec {
+public:
+    Vec(int _x, int _y) : x{ _x }, y{ _y } {};
+    Vec() : x{ 0 }, y{ 0 } {};
     
-    return (0);
-}
+    int x;
+    int y;
+};
+
+#endif
