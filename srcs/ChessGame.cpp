@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 03:49:39 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:52:21 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/08 04:44:11 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,17 @@
 void
 ChessGame::start() const
 {
-    _chessboard.show();
+    // Init phase
+    //      Set player color
+    // Game phase
+    while (_winner){
+        _chessboard.show();
+        // Choose 
+    }
+}
+
+void
+ChessGame::setWinner(PieceColor winner)
+{
+    _winner = winner;
 }

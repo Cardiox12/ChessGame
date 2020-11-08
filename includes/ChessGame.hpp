@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 02:47:13 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 06:51:17 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/08 04:23:18 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ public:
 
     void
     start() const;
+
+    void
+    setWinner(PieceColor winner);
 
 private:
     Chessboard _chessboard;
