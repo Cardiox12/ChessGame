@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 04:00:26 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/05 07:02:10 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/08 05:25:28 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ class ChessPiece {
 public:
 
     ChessPiece();
-    ~ChessPiece();
 
     void
     updateAuthorizedMoves() const;

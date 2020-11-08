@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 02:47:13 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/11/08 04:23:18 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/11/08 08:07:07 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,36 +15,59 @@
 
 # include <iostream>
 # include <string>
+# include "ChessPlayer.hpp"
 # include "ChessBoard.hpp"
 # include "PieceColor.hpp"
+# include "Game/GameStatus.hpp"
+
+# define CLEAR_CONSOLE() (system("clear"))
 
 class ChessGame {
 
 public:
-
     ChessGame() : 
-        _round{ PieceColor::WHITE },
-        _winner{ PieceColor::NONE } {};
+        _winner{ nullptr },
+        _round{ nullptr },
+        _status{ GameStatus::ACTIVE }
+    {};
 
     void
-    start() const;
-
-    void
-    setWinner(PieceColor winner);
-
-private:
-    Chessboard _chessboard;
-    PieceColor _round;
-    PieceColor _winner;
-
-    void
-    play(Vec position) const;
+    start();
 
     int
     import_game(std::string filename);
 
     int
     export_game(std::string filename);
+    
+private:
+    GameStatus  _status;
+    ChessPlayer _black;
+    ChessPlayer _white;
+
+    Chessboard _chessboard;
+    
+    ChessPlayer *_winner;
+    ChessPlayer *_round;
+
+    void
+    setWinner(ChessPlayer *player);
+
+    void
+    setRound(ChessPlayer *player);
+
+    void
+    choseNames();
+
+    void
+    choseColor();
+
+    int
+    choseOption();
+
+    void
+    quit();
+
 };
 
 #endif
